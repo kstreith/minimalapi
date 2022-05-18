@@ -8,7 +8,7 @@ namespace MinimalApiSample.Tests
         {
             builder.ConfigureServices(services =>
             {
-
+                services.AddTransient<IWeatherRepository, MockWeatherRepository>();
             });
         }
     }
